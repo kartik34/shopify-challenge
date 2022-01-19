@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Post.css';
 import 'bulma/css/bulma.min.css';
-import { Box, Tag, Image } from 'react-bulma-components';
+import { Box, Image, Button, Columns } from 'react-bulma-components';
+
 
 function Post(props: any) {
-    const article = props.article;
+    const [active, setActive] = useState(false)
     return (
-        <Box id="post" key={post.rating} >
-            <Image src={post.url} />
-            <p>{post.title}</p><p>{post.date}</p>
-        </Box>
+        <Columns.Column size="one-third" id="post" >
+            <Box id="post" >
+                <Image src={props.imgURL} style={{ paddingBottom: "10px" }} fallback="https://i.imgur.com/FAsGf18.png" />
+                <p><b>{props.title}</b></p><p>{props.date}</p><Button color="success" renderAs="span">Like</Button>
+            </Box>
+        </Columns.Column>
     );
 }
 

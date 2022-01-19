@@ -3,7 +3,7 @@ import ReactLoading from 'react-loading';
 
 function Status(props: any) {
     return (
-        <ReactLoading type="spin" color="#0000FF" height={667} width={375} />
+        <ReactLoading type="spin" color="#0000FF" />
     );
 };
 
