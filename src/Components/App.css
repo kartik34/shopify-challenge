@@ -11,5 +11,13 @@
 #heading{
   text-align: center;
   padding-bottom: 10px;
-  padding-top: 35px; 
+  padding-top: 40px; 
+}
+#form{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#noData{
+  text-align: center;
+  margin-top: 10%;
 }
