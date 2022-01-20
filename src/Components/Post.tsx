@@ -1,15 +1,33 @@
-import React from 'react';
-import './Post.css';
+import React, { useState } from 'react';
 import 'bulma/css/bulma.min.css';
-import { Box, Tag, Image } from 'react-bulma-components';
+import { Box, Image, Button, Columns } from 'react-bulma-components';
+
 
 function Post(props: any) {
-    const article = props.article;
+    const [liked, setLike] = useState("Like")
+    const [color, setColor] = useState("success")
+
+    const handleLike = () => {
+        if (liked == "Like") {
+            setLike("Liked")
+            setColor("")
+        } else {
+            setLike("Like")
+            setColor("success")
+        }
+    }
     return (
-        <Box id="post" key={post.rating} >
-            <Image src={post.url} />
-            <p>{post.title}</p><p>{post.date}</p>
-        </Box>
+        <Columns.Column size="one-third" id="post" >
+            <Box id="post" >
+                <Columns>
+
+                    <Image src={props.imgURL} style={{ paddingBottom: "8px" }} fallback="https://i.imgur.com/FAsGf18.png" />
+                    <Columns.Column>
+                        <p><b>{props.title}</b></p><p>{props.date}</p><Button style={{ marginTop: "10px" }} onClick={() => handleLike()} color={color} renderAs="span">{liked}</Button>
+                    </Columns.Column>
+                </Columns>
+            </Box>
+        </Columns.Column >
     );
 }
 
