@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1faa5404-bdcf-4f39-b3d4-6dc270ea4143/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/shopify-challenge",
+    "appService.deploySubpath": "."
+}
