@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shopify-challenge/static/css/main.cc686a0b.css",
+    "main.js": "/shopify-challenge/static/js/main.8a7e0a0b.js",
+    "index.html": "/shopify-challenge/index.html",
+    "main.cc686a0b.css.map": "/shopify-challenge/static/css/main.cc686a0b.css.map",
+    "main.8a7e0a0b.js.map": "/shopify-challenge/static/js/main.8a7e0a0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc686a0b.css",
+    "static/js/main.8a7e0a0b.js"
+  ]
+}
