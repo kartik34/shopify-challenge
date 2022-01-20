@@ -8,7 +8,7 @@ function Post(props: any) {
     const [color, setColor] = useState("success")
 
     const handleLike = () => {
-        if (liked == "Like") {
+        if (liked === "Like") {
             setLike("Liked")
             setColor("")
         } else {
@@ -18,10 +18,9 @@ function Post(props: any) {
     }
     return (
         <Columns.Column size="one-third" id="post" >
-            <Box id="post" >
+            <Box id="post">
                 <Columns>
-
-                    <Image src={props.imgURL} style={{ paddingBottom: "8px" }} fallback="https://i.imgur.com/FAsGf18.png" />
+                    <Image src={props.imgURL} style={{ paddingBottom: 5, paddingLeft: 8, paddingRight: 8, paddingTop: 8 }} fallback="https://i.imgur.com/FAsGf18.png" />
                     <Columns.Column>
                         <p><b>{props.title}</b></p><p>{props.date}</p><Button style={{ marginTop: "10px" }} onClick={() => handleLike()} color={color} renderAs="span">{liked}</Button>
                     </Columns.Column>
